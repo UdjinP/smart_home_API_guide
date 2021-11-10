@@ -218,3 +218,4 @@ $.post(
 // если старый пароль неправильный
 {"status":"success","msg":"wrong old password"}
 ```
+
