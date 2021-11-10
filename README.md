@@ -216,6 +216,6 @@ $.post(
 // Ответ:
 {"status":"success","msg":"user password changed successfully"}
 // если старый пароль неправильный
-{"status":"success","msg":"wrong old password"}
+{"status":"error","msg":"wrong old password"}
 ```
 
