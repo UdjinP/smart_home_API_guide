@@ -151,7 +151,7 @@ $.post(
   {
       class: 'Main',
       action: 'getMainInfo',
-      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB', 'id_user': 1 }
+      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB' }
   },
   function (data) {}
 );
@@ -217,5 +217,24 @@ $.post(
 {"status":"success","msg":"user password changed successfully"}
 // если старый пароль неправильный
 {"status":"error","msg":"wrong old password"}
+```
+
+### Экран Editor Scenario
+#### getInfo
+Получить данные о сценарии
+```js
+$.post(
+  url,
+  {
+      class: 'Scenario',
+      action: 'getInfo',
+      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB', 'id_scenario': 12 }
+  },
+  function (data) {}
+);
+
+// Ответ:
+{"status":"success","msg":"data loaded successfully",
+"data":[{name: "Все ушли", id_icon: "7", color: "#FBB050", count_click: "2"}]}
 ```
 
