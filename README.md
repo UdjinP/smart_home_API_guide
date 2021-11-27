@@ -152,6 +152,7 @@ $.post(
       class: 'Main',
       action: 'getMainInfo',
       param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB' }
+      // пользователь и код активной сети определяется по токену
   },
   function (data) {}
 );
@@ -229,6 +230,7 @@ $.post(
       class: 'Scenario',
       action: 'getInfo',
       param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB', 'id_scenario': 12 }
+      // пользователь и код активной сети определяется по токену
   },
   function (data) {}
 );
@@ -245,4 +247,21 @@ $.post(
 // Данные можно взять из полученного массива data.scenarios, метода getMainInfo экрана Main
 ```
 
+### Экран New Scenario
+#### addScenario
+Сохранить новый сценарий
+```js
+$.post(
+  url,
+  {
+      class: 'Scenario',
+      action: 'addScenario',
+      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB', 'name': 'My new scenario', 'id_icon': 2 }
+      // пользователь и код активной сети определяется по токену
+  },
+  function (data) {}
+);
 
+// Ответ:
+{"status":"success","msg":"record successfully added","insert_id":25}
+```
