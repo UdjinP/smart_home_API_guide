@@ -210,6 +210,7 @@ $.post(
       action: 'change_password',
       param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB',
                 'old_password': 'test', 'new_password': 'admin' }
+                // пользователь определяется по токену
   },
   function (data) {}
 );
