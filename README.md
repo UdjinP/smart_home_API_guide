@@ -245,21 +245,4 @@ $.post(
 // Данные можно взять из полученного массива data.scenarios, метода getMainInfo экрана Main
 ```
 
-### Экран New Scenario
-#### add
-Создать новый сценарий
-```js
-$.post(
-  url,
-  {
-      class: 'Scenario',
-      action: 'add',
-      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB' }
-  },
-  function (data) {}
-);
 
-// Ответ:
-{"status":"success","msg":"data loaded successfully",
-"data":[{name: "Все ушли", id_icon: "7", color: "#FBB050", count_click: "2"}]}
-```
