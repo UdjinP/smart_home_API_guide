@@ -241,6 +241,7 @@ $.post(
 ### Экран Scenario List
 #### getMainInfo
 Список сценариев для активной сети юзера
+
 Данные можно взять из полученного массива getMainInfo/scenarios, экрана Main
 
 
