@@ -265,4 +265,5 @@ $.post(
 
 // Ответ:
 {"status":"success","msg":"record successfully added","insert_id":25}
+// id_scenario = 25
 ```
