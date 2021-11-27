@@ -242,7 +242,7 @@ $.post(
 #### getMainInfo
 Список сценариев для активной сети юзера
 ```js
-// Данные можно взять из полученного массива getMainInfo.scenarios, метода экрана Main
+// Данные можно взять из полученного массива data.scenarios, метода getMainInfo экрана Main
 ```
 
 ### Экран New Scenario
