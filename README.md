@@ -219,7 +219,7 @@ $.post(
 {"status":"error","msg":"wrong old password"}
 ```
 
-### Экран Editor Scenario
+### Экран Edit Scenario
 #### getInfo
 Получить данные о сценарии
 ```js
@@ -238,3 +238,27 @@ $.post(
 "data":[{name: "Все ушли", id_icon: "7", color: "#FBB050", count_click: "2"}]}
 ```
 
+### Экран Scenario List
+#### getMainInfo
+Список сценариев для активной сети юзера
+Данные можно взять из полученного массива getMainInfo/scenarios, экрана Main
+
+
+### Экран New Scenario
+#### add
+Создать новый сценарий
+```js
+$.post(
+  url,
+  {
+      class: 'Scenario',
+      action: 'add',
+      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB' }
+  },
+  function (data) {}
+);
+
+// Ответ:
+{"status":"success","msg":"data loaded successfully",
+"data":[{name: "Все ушли", id_icon: "7", color: "#FBB050", count_click: "2"}]}
+```
