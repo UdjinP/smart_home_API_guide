@@ -293,35 +293,35 @@ $.post(
 ```
 ### Таблицы
 Описание таблиц
-- Access
+#### Access
 Активность пользователя в сети net с указанием прав
-    id_access
-    id_user
-    id_net
-    id_type_user (флаг админ)
-    active (флаг активности)
+- id_access
+- id_user
+- id_net
+- id_type_user (флаг админ)
+- active (флаг активности)
 
-- Controls
+#### Controls
 Контролируемые ноды.
-    id_ctrl
-    id_node (код устройства)
-    id_group (код группы)
-    id_scenario (код сценария)
-    id_state (код состояния)
-    id_sign (код знака условия для установки состояния)
-    id_schedule (код расписания)
-    value (значение состояния)
-    name
+- id_ctrl
+- id_node (код устройства)
+- id_group (код группы)
+- id_scenario (код сценария)
+- id_state (код состояния)
+- id_sign (код знака условия для установки состояния)
+- id_schedule (код расписания)
+- value (значение состояния)
+- name
 
-- Icons
-- Icon_colors
-- Nets
-- Nodes
-- Node_groups
-- Node_types
-- Rooms
-- Scenario
-- Schedule
-- States
-- Triggers
-- Users
+#### Icons
+#### Icon_colors
+#### Nets
+#### Nodes
+#### Node_groups
+#### Node_types
+#### Rooms
+#### Scenario
+#### Schedule
+#### States
+#### Triggers
+#### Users
