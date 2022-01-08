@@ -51,12 +51,14 @@ ____
 ### Классы
 Названия классов соответствуют названиям таблиц в БД
 - Access
+- Controls
 - Nets
 - Nodes
+- Node_groups
 - Node_types
 - Rooms
 - Scenario
-- Shedule
+- Schedule
 - States
 - Triggers
 - Users
@@ -246,6 +248,22 @@ $.post(
 Список сценариев для активной сети юзера
 ```js
 // Данные можно взять из полученного массива data.scenarios, метода getMainInfo экрана Main
+```
+#### delScenario
+Удалить сценарий и связанные с ним записи в таблицах Controls и Triggers
+```js
+$.post(
+  url,
+  {
+      class: 'Scenario',
+      action: 'delScenario',
+      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB', 'id_scenario': 12 }
+  },
+  function (data) {}
+);
+
+// Ответ:
+{"status":"success","msg":"record deleted successfully"}
 ```
 
 ### Экран New Scenario
