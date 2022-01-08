@@ -167,7 +167,7 @@ $.post(
 
 // Ответ:
 {"status":"success","msg":"data loaded successfully",
-"data": { "user":{...}, "net":{...}, "nodes":{...}, "scenarios":{...}}
+"data": { "user":{...}, "net":{...}, "nodes":{...}, "scenarios":{...}}}
 
 // если net не выбрана, придет только user
 // массивы nodes и scenarios отсортированы по популярности (count_click)
@@ -291,3 +291,37 @@ $.post(
 {"status":"success","msg":"record successfully added","insert_id":25}
 // id_scenario = 25
 ```
+### Таблицы
+Описание таблиц
+- Access
+Активность пользователя в сети net с указанием прав
+    id_access
+    id_user
+    id_net
+    id_type_user (флаг админ)
+    active (флаг активности)
+
+- Controls
+Контролируемые ноды.
+    id_ctrl
+    id_node (код устройства)
+    id_group (код группы)
+    id_scenario (код сценария)
+    id_state (код состояния)
+    id_sign (код знака условия для установки состояния)
+    id_schedule (код расписания)
+    value (значение состояния)
+    name
+
+- Icons
+- Icon_colors
+- Nets
+- Nodes
+- Node_groups
+- Node_types
+- Rooms
+- Scenario
+- Schedule
+- States
+- Triggers
+- Users
