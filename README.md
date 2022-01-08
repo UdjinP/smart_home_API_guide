@@ -123,14 +123,18 @@ $.post(
 {"status":"success","msg":"record deleted successfully"}
 ```
 #### getByField
-Получить данные из таблицы по значению одного поля. В параметрах метода указывается ключ-значение нужного поля для фильтра
+Получить данные из таблицы по значению одного или нескольких полей.
+В параметрах метода указывается ключ-значение нужных полей для фильтра.
 ```js
 $.post(
   url,
   {
       class: 'Nodes',
       action: 'getByField',
-      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB', 'id_room': 6 }
+      param: { 'token': 'zBpjfMzIxd076EEazvdTe0ADdi9Ro5oB',
+        'id_room': 6,
+        'key_access': 3
+        }
   },
   function (data) {}
 );
