@@ -52,6 +52,8 @@ ____
 Названия классов соответствуют названиям таблиц в БД
 - Access
 - Controls
+- Icons
+- Icon_colors
 - Nets
 - Nodes
 - Node_groups
